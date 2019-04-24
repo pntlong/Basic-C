@@ -1,0 +1,15 @@
+#include <math.h>
+#include <stdio.h>
+int main() {
+    double m;
+    scanf("%lf", &m);
+    int t;
+    scanf("%i", &t);
+    int p;
+    scanf("%i", &p);
+    float tip=m*t/100;
+    float tax=m*p/100;
+    int total=round(m+tip+tax);
+    printf("%d",total);
+    return 0;
+}
