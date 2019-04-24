@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+int main ()
+{
+  double a;
+  int b, c, total;
+  float tax, tip;
+  scanf ("%lf\n", &a);
+  scanf ("%d\n%d", &b, &c);
+  tip = a*b/100;
+  tax = a*c/100;
+  total = a+tip+tax;
+  round(total);
+  printf ("%d", total);
+  return 0;
+ }
